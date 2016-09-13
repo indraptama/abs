@@ -1,0 +1,23 @@
+{
+  "name": "abs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-pug": "^3.0.4",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-import": "^8.1.2",
+    "suitcss-base": "^2.0.0",
+    "suitcss-components-flex-embed": "^2.0.4",
+    "tachyons": "^4.3.1"
+  }
+}

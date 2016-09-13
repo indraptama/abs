@@ -1,0 +1,38 @@
+extends src/layout/default.jade
+block content
+  .Hero.relative.cover
+    .div.absolute.h-100.w-100#videoContainer
+      #video_cover
+      <video id="background_video" loop muted/>
+      //video#background_video(loop=true,muted=true)
+      //iframe(src="https://www.youtube.com/embed/_batWTU_Vx8?autoplay=1&controls=0&showinfo=0&autohide=1", frameborder="0", height="100%", width="100%")
+    .dt.tc.w-100.h-100.absolute.bg-black-50
+      .dtc.v-mid
+        .w-80.w-50-m.w-40-l.mh-auto.pa4
+          img(src="img/craft2-21.svg", alt="")
+          // p.ttu.b.white.f3-l.lh-title your Advertising Media & Kitchen Set
+  section.services.pa4.pa4-m.pa6-l.relative.bg-near-white
+    .container.cf.mh-auto.relative.mb4.black-90
+      h2.mb4.f2.f-headline-l.lh-solid.tracked-tight.tc.tl-l.foo We are Abstract Advertising
+      p.f3-l.foo Berdiri sejak tahun 2004 di kawasan Ujungberung Bandung. Kami adalah penyedia jasa pembuatan berbagai media advertising dan kitchen set.
+    .container.cf.mh-auto.relative
+      a(href="#").fl.dib.w-100.w-50-ns.link.black.foo
+        .FlexEmbed.bg-blue
+          .FlexEmbed-ratio.bg-neon.cover
+          .FlexEmbed-content.tc.tr-l
+            .dt.w-100.h-100.absolute
+              .dtc.v-btm.v-mid-l.tc.tr-l
+                .dib.pa4.bg-white.w-80.w-50-l.mb4.mb0-l.tl
+                  h3.ttu.f5 Advertising Media
+      a(href="#").fl.dib.w-100.w-50-ns.link.black.mt6-l.foo
+        .FlexEmbed.bg-yellow
+          .FlexEmbed-ratio.bg-kitchen.cover
+          .FlexEmbed-content
+            .dt.w-100.h-100.absolute
+              .dtc.v-btm.v-mid-l.tc.tl-l
+                .dib.pa4.bg-orange.w-80.w-50-l.mb4.mb0-l.tl
+                  h3.ttu.f5 Kitchen Set
+  section
+    
+  
+    

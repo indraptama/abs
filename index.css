@@ -1,0 +1,71 @@
+@import "suitcss-base";
+@import "tachyons";
+@import "suitcss-components-flex-embed";
+@import "src/css/js-video.css";
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'poppins', 'avenir next', 'avenir', 'century gothic', 'futura', 'arial', sans-serif;
+  min-height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  font-size: 87.5%;
+  line-height: 1.5;
+}
+
+main {
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.mh-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-800 {
+  max-width: 800px;
+}
+.container {
+  max-width: 1280px;
+}
+
+.f-small {
+  font-size: 0.75rem;
+}
+
+.MainHeader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.Hero {
+  height: 90vh;
+  width: 100%;
+  background: red;
+}
+
+
+.bg-neon {
+  background-image: url('../img/neon.jpg')
+}
+.bg-kitchen {
+  background-image: url('../img/kitchen.jpg')
+}
