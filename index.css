@@ -17,6 +17,8 @@ html {
   color: #444;
 }
 
+.sans {}
+
 body {
   font-size: 87.5%;
   line-height: 1.5;
@@ -58,7 +60,7 @@ hr {
 .Hero {
   height: 95vh;
   width: 100%;
-  background: red;
+  background: black;
 }
 
 
@@ -75,4 +77,17 @@ hr {
 
 .col-2 {
   columns: 2;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.lh-large {
+  line-height: 1.618;
 }
