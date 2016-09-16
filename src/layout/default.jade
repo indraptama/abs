@@ -12,14 +12,14 @@ html.no-js(lang="en")
     
 
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
-  body.bg-near-white
+  body.bg-light-gray
     | <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     include header.jade
     main
       block content
 
     include footer.jade
-    // <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
     script(src="js/bideo.js")
     script(src="js/main.js")
     <script>window.sr = ScrollReveal().reveal('.foo', {duration: 800, delay: 0, distance: '50px', viewFactor: 0.4, scale: 1, viewOffset: { top: 82, right: 0, bottom: 0, left: 0 }});</script>
