@@ -75,6 +75,10 @@ hr {
   top: 0;
 }
 
+.r0 {
+  right: 0;
+}
+
 .col-2 {
   columns: 2;
 }
@@ -89,5 +93,5 @@ svg {
 }
 
 .lh-large {
-  line-height: 1.618;
+  line-height: 2;
 }
