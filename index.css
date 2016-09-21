@@ -80,6 +80,11 @@ hr {
   right: 0;
 }
 
+.b0{
+  bottom: 0;
+}
+
+
 .col-2 {
   columns: 2;
 }
@@ -96,3 +101,6 @@ svg {
 .lh-large {
   line-height: 2;
 }
+
+.hov-slide {transform: translate3d(0px,0,0);transition: transform 250ms ease}
+.hov-slide:hover { transform: translate3d(30px,0,0);transition: transform 250ms ease}
