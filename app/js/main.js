@@ -1,39 +1,44 @@
-(function () {
+var galThumbs = document.querySelectorAll('.galThumb');
 
-  var bv = new Bideo();
-  bv.init({
-    // Video element
-    videoEl: document.querySelector('#background_video'),
 
-    // Container element
-    container: document.querySelector('#videoContainer'),
 
-    // Resize
-    resize: true,
+for (var i = 0; i < galThumbs.length; i++) {
+  var galThumb = galThumbs[i];
+  var galThumbCont = galThumb.querySelector('.galThumb-container');
 
-    // autoplay: false,
+  galThumbCont.addEventListener('mouseover', function(){
+    Velocity(this.querySelector('.galThumb-img'), { translateX: 50 }, 500);
+    Velocity(this.querySelector('.galThumb-desc'), { translateX: 50 }, {delay: 150}, 500);
+  },false);
 
-    isMobile: window.matchMedia('(max-width: 768px)').matches,
+  galThumbCont.addEventListener('mouseleave', function(){
+    Velocity(this.querySelector('.galThumb-img'), { translateX: 0 }, {delay: 150}, 500);
+    Velocity(this.querySelector('.galThumb-desc'), { translateX: 0 }, 500);
+  },false);
+  //MouseHover(galThumbCont);
 
-    playButton: document.querySelector('#play'),
-    pauseButton: document.querySelector('#pause'),
+  galThumbCont.addEventListener('focus', function(){
+    Velocity(this.querySelector('.galThumb-img'), { translateX: 50 }, 500);
+    Velocity(this.querySelector('.galThumb-desc'), { translateX: 50 }, {delay: 150}, 500);
+  },false);
 
-    // Array of objects containing the src and type
-    // of different video formats to add
-    src: [
-      {
-        src: '../img/video.mp4',
-        type: 'video/mp4'
-      },
-      {
-        src: '../img/video.webm',
-        type: 'video/webm;codecs="vp8, vorbis"'
-      }
-    ],
+  galThumbCont.addEventListener('blur', function(){
+    Velocity(this.querySelector('.galThumb-img'), { translateX: 0 }, {delay: 150}, 500);
+    Velocity(this.querySelector('.galThumb-desc'), { translateX: 0 }, 500);
+  },false);
 
-    // What to do once video loads (initial frame)
-    onLoad: function () {
-      document.querySelector('#video_cover').style.display = 'none';
-    }
-  });
-}());
+};
+
+
+// Event function
+
+
+function MouseHover(elem) {
+  elem.addEventListener('mouseover', function(){
+    Velocity(this, { translateX: 50 }, [ 500, 20 ]);
+  },false);
+
+  elem.addEventListener('mouseleave', function(){
+    Velocity(this, { translateX: 0 }, [ 500, 20 ]);
+  },false);
+}
