@@ -1,6 +1,7 @@
 @import "suitcss-base";
 @import "tachyons";
 @import "suitcss-components-flex-embed";
+@import "suitcss-components-grid";
 @import "src/css/js-video.css";
 @import "src/css/animation.css";
 
@@ -89,6 +90,10 @@ hr {
 }
 
 
+.w-0 {
+  width: 0;
+}
+
 .col-2 {
   columns: 2;
 }
@@ -114,5 +119,9 @@ svg {
 }
 
 .galThumb-desc {
+  left: -4rem;
+}
+
+.l-4 {
   left: -4rem;
 }

@@ -19,5 +19,8 @@
     "suitcss-base": "^2.0.0",
     "suitcss-components-flex-embed": "^2.0.4",
     "tachyons": "^4.3.1"
+  },
+  "dependencies": {
+    "suitcss-components-grid": "^3.0.3"
   }
 }

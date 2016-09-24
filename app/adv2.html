@@ -34,8 +34,8 @@
       </article>
       <section>
         <div class="container mh-auto ph4 ph5-l pt4 cf">
-          <div class="container cf">
-            <div class="galThumb pa1 pa3-l mb5-l fl db w-100 w-60-ns link overflow-hidden">
+          <div class="flex flex-wrap cf">
+            <div class="galThumb pa1 pa3-l mb5-l fl w-100 w-50-m w-60-l link overflow-hidden foo">
               <div class="relative galThumb-container ml5-l"><a class="galThumb-img db FlexEmbed img-fill relative" href="#">
                   <div class="FlexEmbed-ratio FlexEmbed-ratio--4by3 cover"></div>
                   <div class="FlexEmbed-content tc"><img src="img/kitchen.jpg"/></div></a><a class="galThumb-desc dn dib-l absolute w-80 z-2 mb4 ml0 b0 link orange" href="#">
@@ -44,7 +44,7 @@
                     <p>ketkektekt ddede</p>
                   </article></a></div>
             </div>
-            <div class="galThumb pa1 pa3-l mb5-l fl db w-100 w-40-ns link overflow-hidden v-btm">
+            <div class="galThumb pa1 pa3-l mb5-l fl w-100 w-50-m w-40-l link overflow-hidden foo self-end">
               <div class="relative galThumb-container ml5-l"><a class="galThumb-img db FlexEmbed img-fill relative" href="#">
                   <div class="FlexEmbed-ratio FlexEmbed-ratio--4by3 cover"></div>
                   <div class="FlexEmbed-content tc"><img src="img/neon.jpg"/></div></a><a class="galThumb-desc dn dib-l absolute w-80 z-2 mb4 ml0 b0 link orange" href="#">
@@ -53,9 +53,7 @@
                     <p>ketkektekt ddede</p>
                   </article></a></div>
             </div>
-          </div>
-          <div class="container cf"> 
-            <div class="galThumb pa1 pa3-l mb5-l fl db w-100 w-40-ns link overflow-hidden">
+            <div class="galThumb pa1 pa3-l mb5-l fl w-100 w-50-m w-40-l link overflow-hidden foo">
               <div class="relative galThumb-container ml5-l"><a class="galThumb-img db FlexEmbed img-fill relative" href="#">
                   <div class="FlexEmbed-ratio FlexEmbed-ratio--4by3 cover"></div>
                   <div class="FlexEmbed-content tc"><img src="img/kitchen.jpg"/></div></a><a class="galThumb-desc dn dib-l absolute w-80 z-2 mb4 ml0 b0 link orange" href="#">
@@ -64,7 +62,7 @@
                     <p>ketkektekt ddede</p>
                   </article></a></div>
             </div>
-            <div class="galThumb pa1 pa3-l mb5-l fl db w-100 w-60-ns link overflow-hidden">
+            <div class="galThumb pa1 pa3-l mb5-l fl w-100 w-50-m w-60-l link overflow-hidden foo">
               <div class="relative galThumb-container ml5-l"><a class="galThumb-img db FlexEmbed img-fill relative" href="#">
                   <div class="FlexEmbed-ratio FlexEmbed-ratio--4by3 cover"></div>
                   <div class="FlexEmbed-content tc"><img src="img/neon.jpg"/></div></a><a class="galThumb-desc dn dib-l absolute w-80 z-2 mb4 ml0 b0 link orange" href="#">
@@ -118,7 +116,8 @@
     <script src="js/masonry.js"></script>
     <script src="js/img-fill.js"></script>
     <script src="js/velocity.min.js"></script>
-    <script src="js/main.js"></script><script>window.sr = ScrollReveal().reveal('.foo', {duration: 800, delay: 0, distance: '50px', viewFactor: 0.4, scale: 1, viewOffset: { top: 82, right: 0, bottom: 0, left: 0 }});</script>
+    <!--script(src="js/anime.min.js")-->
+    <script src="js/main.js"></script><script>window.sr = ScrollReveal().reveal('.foo', {origin:'bottom', duration: 1000, delay: 0, distance: '50px', viewFactor: 0.4, scale: 1, viewOffset: { top: 82, right: 0, bottom: 0, left: 0 }});</script>
     <script src="js/parallax.js"></script><script></script>
   </body>
 </html>
